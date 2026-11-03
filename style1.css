@@ -1,0 +1,431 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #243126;
+    background-color: #fffdf8;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1120px;
+    margin: auto;
+}
+
+header {
+    background-color: #fffdf8;
+    border-bottom: 1px solid #eee8dc;
+}
+
+.navbar {
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #253b2c;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #d87942;
+}
+
+/* HERO SECTION */
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    color: white;
+
+    background-image:
+        linear-gradient(rgba(18, 37, 25, 0.75), rgba(18, 37, 25, 0.35)),
+        url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&q=85");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.eyebrow {
+    color: #d87942;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #f2b27e;
+}
+
+.hero-text {
+    max-width: 500px;
+    margin-bottom: 28px;
+    color: #f3f1e9;
+}
+
+/* BUTTONS */
+.button {
+    display: inline-block;
+    padding: 13px 23px;
+    background-color: #d87942;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background-color: #b95e2c;
+    transform: translateY(-2px);
+}
+
+/* COMMON SECTION SPACING */
+.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* ABOUT SECTION */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+}
+
+.about-image img {
+    height: 380px;
+    border-radius: 12px;
+}
+
+.about-content h2,
+.section-heading h2,
+.offer-content h2,
+.contact-grid h2 {
+    color: #253b2c;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.description {
+    color: #657064;
+    margin-bottom: 14px;
+}
+
+.about-content .eyebrow {
+    color: #d87942;
+}
+
+.text-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: #b95e2c;
+    font-weight: bold;
+}
+
+.text-link:hover {
+    color: #d87942;
+}
+
+/* MENU SECTION */
+.menu-section {
+    background-color: #f5f1e8;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto 38px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+/* FOOD CARDS */
+.food-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(35, 48, 35, 0.07);
+    transition: 0.2s;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(35, 48, 35, 0.13);
+}
+
+.food-card img {
+    height: 175px;
+}
+
+.food-info {
+    padding: 17px;
+}
+
+.food-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.food-title h3 {
+    font-size: 16px;
+}
+
+.food-title strong {
+    color: #c56732;
+    white-space: nowrap;
+}
+
+.food-info p {
+    color: #6d756a;
+    font-size: 14px;
+}
+
+/* SPECIAL OFFER */
+.offer-section {
+    padding: 55px 0;
+    background-color: #263d2d;
+    color: white;
+}
+
+.offer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.offer-content h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.offer-description {
+    color: #e0e7dd;
+    max-width: 650px;
+}
+
+.button-light {
+    background-color: #fffdf8;
+    color: #263d2d;
+    white-space: nowrap;
+}
+
+.button-light:hover {
+    background-color: #f2b27e;
+    color: #263d2d;
+}
+
+/* CUSTOMER REVIEWS */
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.review-card {
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #eee8dc;
+    border-radius: 10px;
+}
+
+.stars {
+    color: #d87942;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.review-text {
+    color: #657064;
+    margin-bottom: 18px;
+}
+
+.review-card h3 {
+    font-size: 15px;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    padding: 70px 0;
+    background-color: #f5f1e8;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-intro > p:last-child {
+    color: #657064;
+}
+
+.contact-details h3 {
+    margin-bottom: 10px;
+    color: #253b2c;
+}
+
+.contact-details p {
+    margin-bottom: 10px;
+    color: #657064;
+    overflow-wrap: anywhere;
+}
+
+.contact-details h3:nth-of-type(2) {
+    margin-top: 24px;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 22px 5%;
+    background-color: #1d3023;
+    color: #e8eee5;
+    font-size: 14px;
+}
+
+.footer a:hover {
+    color: #f2b27e;
+}
+
+/* TABLET RESPONSIVENESS */
+@media (max-width: 900px) {
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about {
+        gap: 30px;
+    }
+
+    .about-image img {
+        height: 330px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 18px 0;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .nav-links {
+        gap: 12px 18px;
+    }
+
+    .hero {
+        min-height: 430px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .about,
+    .contact-grid,
+    .review-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image img {
+        height: 260px;
+    }
+
+    .section {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .about-content h2,
+    .section-heading h2,
+    .offer-content h2,
+    .contact-grid h2 {
+        font-size: 32px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .food-card img {
+        height: 220px;
+    }
+
+    .offer-content {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
